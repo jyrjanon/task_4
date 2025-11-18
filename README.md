@@ -17,9 +17,9 @@ Specific port: 23 (Telnet)
 Action: Block the connection
 Applied to: Domain, Private, Public
 Named the rule: Block Telnet Port 23
-
+----
 ![src1](src1.png)
-
+----
 3. Tested the Rule
 Used PowerShell to verify if the port was blocked:
 '''Test-NetConnection -Port 23 -ComputerName 127.0.0.1'''
@@ -27,4 +27,4 @@ Used PowerShell to verify if the port was blocked:
 4. Disabled the Rule After Testing
 Safety step to return system to normal condition.
 Right-clicked on Block Telnet Port 23 and selected Disable Rule.
-![src2](src2.png)
+![src3](src3.png)
